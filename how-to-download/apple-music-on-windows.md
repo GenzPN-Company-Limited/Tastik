@@ -51,6 +51,7 @@ sudo ./wrapper -M 20020
 
 ***
 
+<<<<<<< Updated upstream
 **Terminal 2 (Ubuntu)**
 
 **For Album, Playlist, or Artist:**
@@ -74,22 +75,47 @@ sudo ./wrapper -M 20020
 ***
 
 #### **Examples**
+=======
+## **Terminal 2 (Ubuntu)**
+
+#### **ALAC Lossless**
+>>>>>>> Stashed changes
 
 1.  **Download an album or playlist:**
 
     ```bash
-    ./main https://music.apple.com/vn/album/ditto/1657231957
+    ./main <url>
     ```
-2.  **Download Atmos tracks:**
+3.  **Select specific tracks:**
 
     ```bash
-    ./main --atmos https://music.apple.com/vn/album/ditto/1657231957
+    ./main --select <url>
     ```
-3.  **Select specific tracks to download:**
+#### **Dolby Atmos**
+
+1.  **Download an album or playlist Atmos:**
 
     ```bash
-    ./main --select https://music.apple.com/vn/album/ditto/1657231957
-    ./main --atmos --select https://music.apple.com/vn/album/ditto/1657231957
+    ./main --atmos <url>
+    ```
+
+2.  **Select specific Atmos tracks:**
+
+    ```bash
+    ./main --atmos --select <url>
+    ```
+#### **M4A AAC**
+
+1.  **Download an album or playlist M4A AAC:**
+
+    ```bash
+    ./main --aac <url>
+    ```
+
+2.  **Select specific M4A AAC tracks:**
+
+    ```bash
+    ./main --aac --select <url>
     ```
 
 ***

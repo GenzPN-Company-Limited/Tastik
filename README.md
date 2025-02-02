@@ -46,10 +46,30 @@ This project provides tools to download Apple Music tracks, albums, and playlist
 
 1.  Install dependencies:
 
+<<<<<<< Updated upstream
     ```bash
     brew install go gpac git docker
     ```
 2.  Clone the repository:
+=======
+## **Examples**
+1. Download an album:  
+   ```bash
+   go run main.go https://music.apple.com/vn/album/ditto/1657231957
+   ```  
+2. Download Atmos tracks:  
+   ```bash
+   go run main.go --atmos https://music.apple.com/vn/album/ditto/1657231957
+   ```  
+3. Select specific tracks:  
+   ```bash
+   go run main.go --select https://music.apple.com/vn/album/ditto/1657231957
+   ```  
+4. Select specific AAC tracks:  
+   ```bash
+   go run main.go --aac https://music.apple.com/vn/album/ditto/1657231957
+   ```  
+>>>>>>> Stashed changes
 
     ```bash
     git clone https://github.com/zhaarey/apple-music-alac-atmos-downloader.git

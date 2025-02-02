@@ -63,33 +63,46 @@ cd apple-music-alac-atmos-downloader
 
 #### **Step 3: Start Downloading**
 
-Use the following commands to start downloading:
+Use the following commands to start downloading
 
-**For Album/Playlist/Artist**
+#### **ALAC Lossless**
 
-```bash
-go run main.go <url>
-```
+1.  **Download an album or playlist:**
 
-**For Atmos Tracks**
+    ```bash
+    go run main.go <url>
+    ```
+3.  **Select specific tracks:**
 
-```bash
-go run main.go --atmos <url>
-```
+    ```bash
+    go run main.go --select <url>
+    ```
+#### **Dolby Atmos**
 
-**For Select Track**
+1.  **Download an album or playlist Atmos:**
 
-```bash
-go run main.go --select <url>
-```
+    ```bash
+    go run main.go --atmos <url>
+    ```
 
-**For Select Atmos Track**
+2.  **Select specific Atmos tracks:**
 
-```bash
-go run main.go --select --atmos <url>
-```
+    ```bash
+    go run main.go --atmos --select <url>
+    ```
+#### **M4A AAC**
 
-***
+1.  **Download an album or playlist M4A AAC:**
+
+    ```bash
+    go run main.go --aac <url>
+    ```
+
+2.  **Select specific M4A AAC tracks:**
+
+    ```bash
+    go run main.go --aac --select <url>
+    ```
 
 ***
 
