@@ -10,4 +10,6 @@
 
 ***
 
-* [🥲 Bug](bug.md)
+## Bug
+* [🥲 Error Login Account](bug/error-login-account.md)
+* [🥲 Error Download](bug/error-download.md)
