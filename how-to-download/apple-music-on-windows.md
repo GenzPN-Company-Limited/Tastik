@@ -1,16 +1,18 @@
 # Apple Music On Windows
 
-## Apple Music Download on Windows (WSL)
+## Apple Music On Windows
+
+### Apple Music Download on Windows (WSL)
 
 ***
 
-### **Part 1 - Initial Setup**
+#### **Part 1 - Initial Setup**
 
 _(Skip this if you already have WSL configured or are using Linux.)_
 
 ***
 
-#### **1. Install WSL**
+**1. Install WSL**
 
 Run the following command in Command Prompt or PowerShell:
 
@@ -20,7 +22,7 @@ winget install --id Microsoft.WSL
 
 ***
 
-#### **2. Install a WSL Distro**
+**2. Install a WSL Distro**
 
 * Install Ubuntu 24.04 (recommended):
 
@@ -34,9 +36,9 @@ winget install --id Canonical.Ubuntu.2404
 
 ***
 
-### **To Download Next Time**
+#### **To Download Next Time**
 
-#### **Terminal 1 (Ubuntu)**
+**Terminal 1 (Ubuntu)**
 
 Run the wrapper:
 
@@ -49,7 +51,7 @@ sudo ./wrapper -M 20020
 
 ***
 
-#### **Terminal 2 (Ubuntu)**
+**Terminal 2 (Ubuntu)**
 
 **For Album, Playlist, or Artist:**
 
@@ -71,7 +73,7 @@ sudo ./wrapper -M 20020
 
 ***
 
-### **Examples**
+#### **Examples**
 
 1.  **Download an album or playlist:**
 
@@ -92,9 +94,9 @@ sudo ./wrapper -M 20020
 
 ***
 
-### **To Update**
+#### **To Update**
 
-#### **Step 1: Update the Downloader**
+**Step 1: Update the Downloader**
 
 ```bash
 cd downloader
@@ -102,7 +104,7 @@ git pull
 go build
 ```
 
-#### **Step 2: Update the Wrapper**
+**Step 2: Update the Wrapper**
 
 ```bash
 cd /wrapper
@@ -111,7 +113,7 @@ git pull
 
 ***
 
-### **Files Location**
+#### **Files Location**
 
 After downloading, files are stored in:
 
@@ -121,7 +123,7 @@ Linux > Ubuntu > Home > User > downloader
 
 ***
 
-### **Notes**
+#### **Notes**
 
 * Ensure WSL is properly configured and running on your Windows system.
 * Replace `<url>` with the actual Apple Music URL of the content you want to download.
