@@ -8,9 +8,7 @@
 * [Apple Music On Android](how-to-download/apple-music-on-android.md)
 * [Apple Music On MacOS](how-to-download/apple-music-on-macos.md)
 
-***
-
-## Bug
+## 🥲 Bug
 
 * [🥲 Error Login Account](bug/error-login-account.md)
 * [🥲 Error Download](bug/error-download.md)
