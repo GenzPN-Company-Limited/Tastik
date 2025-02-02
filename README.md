@@ -46,7 +46,6 @@ This project provides tools to download Apple Music tracks, albums, and playlist
 
 1.  Install dependencies:
 
-<<<<<<< Updated upstream
     ```bash
     brew install go gpac git docker
     ```
