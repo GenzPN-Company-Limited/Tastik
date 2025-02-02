@@ -51,35 +51,16 @@ sudo ./wrapper -M 20020
 
 ***
 
-<<<<<<< Updated upstream
 **Terminal 2 (Ubuntu)**
 
-**For Album, Playlist, or Artist:**
+Run the downloader:
 
 ```bash
-./main <url>
+cd downloader
 ```
 
-**For Atmos Tracks:**
-
-```bash
-./main --atmos <url>
-```
-
-**For Selecting Specific Tracks:**
-
-```bash
-./main --select <url>
-```
-
-***
-
-#### **Examples**
-=======
-## **Terminal 2 (Ubuntu)**
-
+and run the downloader:
 #### **ALAC Lossless**
->>>>>>> Stashed changes
 
 1.  **Download an album or playlist:**
 
