@@ -12,7 +12,17 @@ _(Skip this if you already have WSL configured or are using Linux.)_
 
 ***
 
-**1. Install WSL**
+**1. Enable Windows Feature**
+
+Enable Windows Feature
+
+Turn on the following Windows Features:
+
+- Virtual Machine Platform
+- Windows Hypervisor Platform
+- Windows Subsystem For Linux
+
+**2. Install WSL**
 
 Run the following command in Command Prompt or PowerShell:
 
@@ -22,7 +32,7 @@ winget install --id Microsoft.WSL
 
 ***
 
-**2. Install a WSL Distro**
+**3. Install a WSL Distro**
 
 * Install Ubuntu 24.04 (recommended):
 
@@ -42,10 +52,12 @@ Here’s the **Part 2 - Setup** section in a structured and clear format for you
 ### **Prerequisites**
 Before proceeding, ensure you have the following dependencies installed. Run the following command in your terminal:
 
+### **Update Dependencies**
 ```bash
 sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 ```
 
+### **Install Dependencies**
 ```bash
 sudo apt install clang wget git unzip ffmpeg cmake build-essential golang pkg-config zlib1g-dev
 ```
@@ -63,7 +75,7 @@ sudo apt install clang wget git unzip ffmpeg cmake build-essential golang pkg-co
 ### **Step 2: Download and Extract the NDK**
 1. Download the Android NDK required to build the wrapper:
    ```bash
-   wget https://dl.google.com/android/repository/android-ndk-r23b-linux.zip && unzip android-ndk-r23b-linux.zip -d ~
+   wget https://dl.google.com/android/repository/android-ndk-r27c-linux.zip && unzip android-ndk-r27c-linux.zip -d ~
    ```
 
 ---
@@ -71,7 +83,7 @@ sudo apt install clang wget git unzip ffmpeg cmake build-essential golang pkg-co
 ### **Step 3: Clone the Repositories**
 1. Clone the `wrapper` and `downloader` repositories:
    ```bash
-   git clone --depth 1 https://github.com/zhaarey/wrapper && git clone --depth 1 https://github.com/zhaarey/apple-music-alac-atmos-downloader downloader
+   git clone --depth 1 https://github.com/GenzPN/wrapper && git clone --depth 1 https://github.com/GenzPN/apple-music-alac-atmos-downloader downloader
    ```
 
 ---
