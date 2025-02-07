@@ -18,7 +18,7 @@ This guide provides step-by-step instructions to download Apple Music on macOS u
 2. Install the required dependencies and clone the downloader repository:
 
 ```bash
-brew install go gpac git docker ffmpeg && git clone https://github.com/zhaarey/apple-music-alac-atmos-downloader.git
+brew install go gpac git docker ffmpeg && git clone --depth 1 https://github.com/GenzPN/apple-music-downloader downloader
 ```
 
 ***

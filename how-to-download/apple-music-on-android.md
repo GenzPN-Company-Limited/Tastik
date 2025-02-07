@@ -24,13 +24,13 @@ This guide provides step-by-step instructions to download Apple Music on Android
 
 #### **Step 2: Set Up the Clients**
 
-1. Open the **decryption client** (Apple Music app) and log in with your Apple Music account (**Subscription required**).
-2. Open the **download client** (ZeroTermux), grant the required permissions, and run the following commands:
+1. Open the **Apple Music** app, log in with your Apple Music account (**Subscription required**).
+2. Open the **ZeroTermux** app, grant the required permissions, and run the following commands:
 
 ```bash
-pkg update && pkg upgrade && pkg install git golang gpac ffmpeg && git clone https://github.com/zhaarey/apple-music-alac-atmos-downloader.git
+pkg update -y && pkg upgrade -y && pkg autoclean && pkg clean && pkg install git golang gpac ffmpeg && git clone --depth 1 https://github.com/GenzPN/apple-music-downloader downloader
 ```
-
+And enter when asked to install dependencies.
 ***
 
 #### **Step 3: Configure Storage Paths**
@@ -60,7 +60,7 @@ atmos-save-folder: /storage/emulated/0/Music/AM/AM-DL-Atmos downloads
 1. Start ZeroTermux and navigate to the download project folder:
 
 ```bash
-cd apple-music-alac-atmos-downloader
+cd downloader
 ```
 
 ***
