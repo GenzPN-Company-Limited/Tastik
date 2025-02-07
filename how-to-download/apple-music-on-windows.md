@@ -43,7 +43,11 @@ Here’s the **Part 2 - Setup** section in a structured and clear format for you
 Before proceeding, ensure you have the following dependencies installed. Run the following command in your terminal:
 
 ```bash
-sudo apt install clang wget git unzip build-essential golang pkg-config zlib1g-dev
+sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
+```
+
+```bash
+sudo apt install clang wget git unzip ffmpeg cmake build-essential golang pkg-config zlib1g-dev
 ```
 
 ---
@@ -183,7 +187,8 @@ and run the downloader:
 
 ```bash
 cd downloader
-git pull
+git reset --hard HEAD
+git pull origin main
 go build
 ```
 
