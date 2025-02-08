@@ -15,7 +15,16 @@ This guide provides step-by-step instructions to download Apple Music on macOS u
 #### **Step 1: Set Up the Environment**
 
 1. Open the Terminal.
+
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 2. Install the required dependencies and clone the downloader repository:
+
+```bash
+brew update && brew upgrade && brew upgrade --cask && brew cleanup && brew autoremove
+```
 
 ```bash
 brew install go gpac git docker ffmpeg && git clone --depth 1 https://github.com/GenzPN/apple-music-downloader downloader
@@ -40,13 +49,13 @@ Open the first terminal and run the appropriate command for your Mac's chip:
 **For M Chip (Apple Silicon):**
 
 ```bash
-docker run -v ./rootfs/data:/app/rootfs/data -p 10020:10020 -p 20020:20020 -e args="-M 20020 -H 0.0.0.0" --rm ghcr.io/itouakirai/wrapper:arm
+docker run -v ./rootfs/data:/app/rootfs/data -p 10020:10020 -p 20020:20020 -e args="-M 20020 -H 0.0.0.0" --rm ghcr.io/genzpn/wrapper:arm64
 ```
 
 **For Intel Chip:**
 
 ```bash
-docker run -v ./rootfs/data:/app/rootfs/data -p 10020:10020 -p 20020:20020 -e args="-M 20020 -H 0.0.0.0" --rm ghcr.io/itouakirai/wrapper:x86
+docker run -v ./rootfs/data:/app/rootfs/data -p 10020:10020 -p 20020:20020 -e args="-M 20020 -H 0.0.0.0" --rm ghcr.io/genzpn/wrapper:x86_64
 ```
 
 ***
@@ -56,7 +65,7 @@ docker run -v ./rootfs/data:/app/rootfs/data -p 10020:10020 -p 20020:20020 -e ar
 Open a second terminal and navigate to the downloader directory:
 
 ```bash
-cd apple-music-alac-atmos-downloader
+cd downloader
 ```
 
 ***
