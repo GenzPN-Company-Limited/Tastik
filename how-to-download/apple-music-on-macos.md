@@ -30,6 +30,10 @@ brew update && brew upgrade && brew upgrade --cask && brew cleanup && brew autor
 brew install go gpac git docker ffmpeg && git clone --depth 1 https://github.com/GenzPN/apple-music-downloader downloader
 ```
 
+### **Download the Docker Desktop**
+
+[M Chip (Apple Silicon)](https://desktop.docker.com/mac/main/arm64/Docker.dmg) or [Intel Chip](https://desktop.docker.com/mac/main/amd64/Docker.dmg)
+
 ***
 
 #### **Step 2: Log In to the Wrapper**
