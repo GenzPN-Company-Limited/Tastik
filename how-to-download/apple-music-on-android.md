@@ -28,7 +28,7 @@ This guide provides step-by-step instructions to download Apple Music on Android
 2. Open the **ZeroTermux** app, grant the required permissions, and run the following commands:
 
 ```bash
-pkg update -y && pkg upgrade -y && pkg autoclean && pkg clean && pkg install git golang gpac ffmpeg && git clone --depth 1 https://github.com/GenzPN/apple-music-downloader downloader
+pkg update && pkg upgrade && pkg install git golang gpac ffmpeg && git clone --depth 1 https://github.com/zhaarey/apple-music-downloader downloader
 ```
 And enter when asked to install dependencies.
 ***
