@@ -83,7 +83,7 @@ sudo apt install clang wget git unzip ffmpeg cmake build-essential golang pkg-co
 1.  Download the Android NDK required to build the wrapper:
 
     ```bash
-    wget https://dl.google.com/android/repository/android-ndk-r23b-linux.zip && unzip android-ndk-r27c-linux.zip -d ~
+    wget https://dl.google.com/android/repository/android-ndk-r23b-linux.zip && unzip android-ndk-r23b-linux.zip -d ~
     ```
 
 ***
@@ -93,7 +93,7 @@ sudo apt install clang wget git unzip ffmpeg cmake build-essential golang pkg-co
 1.  Clone the `wrapper` and `downloader` repositories:
 
     ```bash
-    git clone --depth 1 https://github.com/zhaarey/wrapper && git clone --depth 1 https://github.com/zhaarey/apple-music-downloader downloader
+    git clone --depth 1 https://github.com/WorldObservationLog/wrapper && git clone --depth 1 https://github.com/zhaarey/apple-music-downloader downloader
     ```
 
 ***
